@@ -7,7 +7,7 @@ module.exports = function(sequelize, DataTypes) {
         },
         transaction_type: {
             type: DataTypes.STRING,
-            notNull: true
+            allowNull: false
         }
     },
     {

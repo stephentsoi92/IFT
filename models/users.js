@@ -8,7 +8,7 @@ module.exports = function(sequelize, DataTypes) {
         email: {
             type: DataTypes.STRING,
             primaryKey: true,
-            notNull: true,
+            allowNull: false,
             validate: {
                 isEmail: true
             }
@@ -18,11 +18,11 @@ module.exports = function(sequelize, DataTypes) {
         },
         first_name: {
             type: DataTypes.STRING,
-            notNull: true
+            allowNull: false
         },
         last_name: {
             type: DataTypes.STRING,
-            notNull: true
+            allowNull: false
         }
     },
     {

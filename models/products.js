@@ -7,15 +7,15 @@ module.exports = function(sequelize, DataTypes) {
         },
         product_sku: {
             type: DataTypes.STRING,
-            notNull: true
+            allowNull: false
         },
         product_asin: {
             type: DataTypes.STRING,
-            notNull: true
+            allowNull: false
         },
         product_name: {
             type: DataTypes.STRING,
-            notNull: true
+            allowNull: false
         }
     },
     {
