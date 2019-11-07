@@ -1,0 +1,22 @@
+{
+    "development": {
+      "username": "root",
+      "password": "billiards1",
+      "database": "forcastly",
+      "host": "localhost",
+      "dialect": "mysql"
+    },
+    "test": {
+      "username": "root",
+      "password": "billiards1",
+      "database": "forcastly",
+      "host": "localhost",
+      "dialect": "mysql",
+      "logging": false
+    },
+    "production": {
+      "use_env_variable": "JAWSDB_URL",
+      "dialect": "mysql"
+    }
+  }
+  
