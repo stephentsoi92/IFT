@@ -7,7 +7,7 @@ module.exports = function(sequelize, DataTypes) {
         },
         group_name: {
             type: DataTypes.STRING,
-            notNull: true
+            allowNull: false
         }
     },
     {

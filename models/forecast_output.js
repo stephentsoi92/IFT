@@ -8,7 +8,7 @@ module.exports = function(sequelize, DataTypes) {
         },
         forecast_quantity: {
             type: DataTypes.INTEGER,
-            notNull: true
+            allowNull: false
         },
         forecast_date: {
             type: TIMESTAMP,

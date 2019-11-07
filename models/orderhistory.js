@@ -4,7 +4,7 @@ module.exports = function(sequelize, DataTypes) {
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
-            notNull: true
+            allowNull: false
         },
         asin: {
             type: DataTypes.INTEGER,
