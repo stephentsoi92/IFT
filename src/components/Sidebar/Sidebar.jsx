@@ -50,11 +50,12 @@ class Sidebar extends Component {
         data-color={this.props.color}
         data-image={this.props.image}
       >
-          {this.props.hasImage ? (
+        {/* This makes the sidebar image change */}
+          {/* {this.props.hasImage ? (
             <div className="sidebar-background" style={sidebarBackground} />
           ) : (
             null
-          )}
+          )} */}
         <div className="logo">
           <a
             href="../../views/dashboard"
