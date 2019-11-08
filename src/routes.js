@@ -23,7 +23,6 @@ import Icons from "views/Icons.jsx";
 import Maps from "views/Maps.jsx";
 import Notifications from "views/Notifications.jsx";
 import Upgrade from "views/Upgrade.jsx";
-import HomePage from "views/HomePage.jsx";
 
 const dashboardRoutes = [
   {
@@ -33,13 +32,6 @@ const dashboardRoutes = [
     component: Dashboard,
     layout: "/admin"
   },
-  // {
-  //   path: "/homepage",
-  //   name: "Home Page",
-  //   icon: "pe-7s-leaf",
-  //   component: HomePage,
-  //   layout: "/admin"
-  // },
   {
     path: "/user",
     name: "User Profile",

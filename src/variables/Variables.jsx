@@ -497,21 +497,20 @@ var dataPie = {
   series: [50, 20, 30]
 };
 var legendPie = {
-  names: ["Open", "Bounce", "Unsubscribe"],
+  names: ["Last", "Bounce", "Unsubscribe"],
   types: ["info", "danger", "warning"]
 };
 
 // Data for Line Chart
 var dataSales = {
   labels: [
-    "9:00AM",
-    "12:00AM",
-    "3:00PM",
-    "6:00PM",
-    "9:00PM",
-    "12:00PM",
-    "3:00AM",
-    "6:00AM"
+    "Thursday",
+    "Wednesday",
+    "Tuesday",
+    "Monday",
+    "Sunday",
+    "Saturday",
+    "Friday"
   ],
   series: [
     [287, 385, 490, 492, 554, 586, 698, 695],
@@ -548,7 +547,7 @@ var responsiveSales = [
   ]
 ];
 var legendSales = {
-  names: ["Open", "Click", "Click Second Time"],
+  names: ["This Week", "Last week", "Same week last year"],
   types: ["info", "danger", "warning"]
 };
 
