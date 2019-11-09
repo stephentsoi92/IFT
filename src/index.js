@@ -20,7 +20,8 @@ import ReactDOM from "react-dom";
 
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
+import "./assets/css/bootstrap.min.css";
 import "./assets/css/animate.min.css";
 import "./assets/sass/forcastly.scss?v=1.3.0";
 import "./assets/css/demo.css";
