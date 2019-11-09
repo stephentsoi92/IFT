@@ -5,7 +5,19 @@ module.exports = function(sequelize, DataTypes) {
             primaryKey: true,
             autoIncrement: true
         },
-        sales_growth:{
+        units_order: {
+            type: DataTypes.DECIMAL(10, 2)
+        },
+        total_order: {
+            type: DataTypes.DECIMAL(10, 2)
+        },
+        master_carton: {
+            type: DataTypes.DECIMAL(10, 2)
+        },
+        growth_percent: {
+            type: DataTypes.DECIMAL(10, 2)
+        },
+        lead_time: {
             type: DataTypes.DECIMAL(10, 2)
         },
         month: {
