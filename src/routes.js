@@ -32,13 +32,13 @@ const dashboardRoutes = [
     component: Dashboard,
     layout: "/admin"
   },
-  {
-    path: "/user",
-    name: "User Profile",
-    icon: "pe-7s-user",
-    component: UserProfile,
-    layout: "/admin"
-  },
+  // {
+  //   path: "/user",
+  //   name: "User Profile",
+  //   icon: "pe-7s-user",
+  //   component: UserProfile,
+  //   layout: "/admin"
+  // },
   {
     path: "/inventory",
     name: "Inventory",
@@ -53,13 +53,13 @@ const dashboardRoutes = [
   //   component: Typography,
   //   layout: "/admin"
   // },
-  {
-    path: "/icons",
-    name: "Icons",
-    icon: "pe-7s-science",
-    component: Icons,
-    layout: "/admin"
-  },
+  // {
+  //   path: "/icons",
+  //   name: "Icons",
+  //   icon: "pe-7s-science",
+  //   component: Icons,
+  //   layout: "/admin"
+  // },
   // {
   //   path: "/maps",
   //   name: "Maps",
@@ -67,13 +67,13 @@ const dashboardRoutes = [
   //   component: Maps,
   //   layout: "/admin"
   // },
-  {
-    path: "/notifications",
-    name: "Notifications",
-    icon: "pe-7s-bell",
-    component: Notifications,
-    layout: "/admin"
-  },
+  // {
+  //   path: "/notifications",
+  //   name: "Notifications",
+  //   icon: "pe-7s-bell",
+  //   component: Notifications,
+  //   layout: "/admin"
+  // },
   {
     upgrade: true,
     path: "/upgrade",

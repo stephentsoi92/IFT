@@ -268,7 +268,7 @@ var style = {
 //
 const thQuantityArray = ["SKU", "Name", "Quantity"];
 const tdQuantityArray = [
-  ["ATG-7502-00500-1-36-GOL", "ATG Tape", "50"],
+  ["ATG-7502-00500-6-36-GOL", "ATG Tape", "50"],
   ["CGT-80-02000-1-60-BLA", "Black Gaffer Tape", "45"],
   ["CGT-36-02000-1-60-TAN", "Tan Duct Tape", "40"],
   ["CVT-536-00250-1-36-RED", "Red Vinyl Tape", "38"],
@@ -281,6 +281,16 @@ const tdDollarArray = [
   ["ET-337", "Desktop Tape Dispenser", "$1,040"],
   ["GPM-63-02000-24-60-CRE", "Masking Tape 2-inch", "$980"],
   ["CGT-36-02000-1-60-TAN", "Tan Duct Tape", "$880"]
+];
+
+const thInventoryArray = ["SKU", "Name", "Quanity on Hand", "Quanity on PO's", "Price"];
+const tdInventoryArray = [
+  ["ATG-7502-00500-6-36-GOL", "ATG Tape", "40", "100", "$20.99"],
+  ["CGT-80-02000-1-60-BLA", "Black Gaffer Tape", "28", "10", "$18.99"],
+  ["CGT-36-02000-1-60-TAN", "Tan Duct Tape", "50", "29", "$26.8"],
+  ["CVT-536-00250-1-36-RED", "Red Vinyl Tape", "30", "39", "$15.99"],
+  ["MMYP-1-00250-1-36-SIL", "Silver Metalized Tape", "18", "29", "$29.99"],
+  ["CVT-536-01000-6-36-RA", "Rainbow Vinyl School Tape 1-inch", "50", "100", "$29.99"]
 ];
 
 //
@@ -610,6 +620,8 @@ module.exports = {
   tdQuantityArray, // For tables (TableList view)
   thDollarArray,
   tdDollarArray, // For tables (TableList view)
+  thInventoryArray,
+  tdInventoryArray,
   iconsArray, // For icons (Icons view)
   dataPie,
   legendPie,
