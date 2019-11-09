@@ -266,14 +266,21 @@ var style = {
 // // // For tables
 // //
 //
-const thArray = ["ID", "Name", "Salary", "Country", "City"];
-const tdArray = [
-  ["1", "Dakota Rice", "$36,738", "Niger", "Oud-Turnhout"],
-  ["2", "Minerva Hooper", "$23,789", "Curaçao", "Sinaai-Waas"],
-  ["3", "Sage Rodriguez", "$56,142", "Netherlands", "Baileux"],
-  ["4", "Philip Chaney", "$38,735", "Korea, South", "Overland Park"],
-  ["5", "Doris Greene", "$63,542", "Malawi", "Feldkirchen in Kärnten"],
-  ["6", "Mason Porter", "$78,615", "Chile", "Gloucester"]
+const thQuantityArray = ["SKU", "Name", "Quantity"];
+const tdQuantityArray = [
+  ["ATG-7502-00500-1-36-GOL", "ATG Tape", "50"],
+  ["CGT-80-02000-1-60-BLA", "Black Gaffer Tape", "45"],
+  ["CGT-36-02000-1-60-TAN", "Tan Duct Tape", "40"],
+  ["CVT-536-00250-1-36-RED", "Red Vinyl Tape", "38"],
+  ["MMYP-1-00250-1-36-SIL", "Silver Metalized Tape", "20"]
+];
+const thDollarArray = ["SKU", "Name", "$"];
+const tdDollarArray = [
+  ["CVT-536-01000-6-36-RA", "Rainbow Vinyl School Tape 1-inch", "$2,280"],
+  ["SF-2781A", "Stretch Tape Dispenser", "$1,593"],
+  ["ET-337", "Desktop Tape Dispenser", "$1,040"],
+  ["GPM-63-02000-24-60-CRE", "Masking Tape 2-inch", "$980"],
+  ["CGT-36-02000-1-60-TAN", "Tan Duct Tape", "$880"]
 ];
 
 //
@@ -493,11 +500,11 @@ const iconsArray = [
 //
 // Data for Pie Chart
 var dataPie = {
-  labels: ["50%", "20%", "30%"],
-  series: [50, 20, 30]
+  labels: ["22%", "20%", "17%", "41%"],
+  series: [22, 20, 17, 41]
 };
 var legendPie = {
-  names: ["Last", "Bounce", "Unsubscribe"],
+  names: ["Gaffer Tape", "Duct Tape", "Tape Dispenser"],
   types: ["info", "danger", "warning"]
 };
 
@@ -513,9 +520,9 @@ var dataSales = {
     "Friday"
   ],
   series: [
-    [287, 385, 490, 492, 554, 586, 698, 695],
-    [67, 152, 143, 240, 287, 335, 435, 437],
-    [23, 113, 67, 108, 190, 239, 307, 308]
+    [287, 385, 490, 492, 554, 586, 698],
+    [67, 152, 143, 240, 287, 335, 435],
+    [23, 113, 67, 108, 190, 239, 307]
   ]
 };
 var optionsSales = {
@@ -599,8 +606,10 @@ var legendBar = {
 
 module.exports = {
   style, // For notifications (App container and Notifications view)
-  thArray,
-  tdArray, // For tables (TableList view)
+  thQuantityArray,
+  tdQuantityArray, // For tables (TableList view)
+  thDollarArray,
+  tdDollarArray, // For tables (TableList view)
   iconsArray, // For icons (Icons view)
   dataPie,
   legendPie,
