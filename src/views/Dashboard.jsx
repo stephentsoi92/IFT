@@ -21,7 +21,8 @@ import { Grid, Row, Col } from "react-bootstrap";
 
 import { Card } from "components/Card/Card.jsx";
 import { StatsCard } from "components/StatsCard/StatsCard.jsx";
-import { Tasks } from "components/Tasks/Tasks.jsx";
+import { Dollar } from "components/TopProducts/Dollar.jsx";
+import { Quantity } from "components/TopProducts/Quantity.jsx";
 import {
   dataPie,
   legendPie,
@@ -92,37 +93,30 @@ class Dashboard extends Component {
           <Row>
             <Col md={6}>
               <Card
-                id="chartActivity"
-                title="2014 Sales"
-                category="All products including Taxes"
-                stats="Data information certified"
-                statsIcon="fa fa-check"
+                title="Top 5 products by revenue"
+                // category="Backend development"
+                stats="Updated 3 minutes ago"
+                statsIcon="fa fa-history"
                 content={
-                  <div className="ct-chart">
-                    <ChartistGraph
-                      data={dataBar}
-                      type="Bar"
-                      options={optionsBar}
-                      responsiveOptions={responsiveBar}
-                    />
+                  <div className="table-full-width">
+                    <table className="table">
+                      <Dollar />
+                    </table>
                   </div>
-                }
-                legend={
-                  <div className="legend">{this.createLegend(legendBar)}</div>
                 }
               />
             </Col>
 
             <Col md={6}>
               <Card
-                title="Tasks"
-                category="Backend development"
+                title="Top 5 products by quantity"
+                // category="Backend development"
                 stats="Updated 3 minutes ago"
                 statsIcon="fa fa-history"
                 content={
                   <div className="table-full-width">
                     <table className="table">
-                      <Tasks />
+                      <Quantity />
                     </table>
                   </div>
                 }
