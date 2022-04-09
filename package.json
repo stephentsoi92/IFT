@@ -9,7 +9,7 @@
     "chartist": "0.10.1",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
-    "moment": "2.24.0",
+    "moment": "2.29.2",
     "mongoose": "^5.3.16",
     "mysql2": "^2.0.0",
     "node-sass": "4.12.0",
